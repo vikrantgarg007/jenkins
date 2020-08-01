@@ -15,7 +15,7 @@ triggers {
     }
     stage('Sonar analysis') {
         steps {
-            sh 'echo "Hello World"'
+            sh 'echo "Hel World"'
             sh '''
                 echo "Testing"
                 ls -lah
