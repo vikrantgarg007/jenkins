@@ -16,6 +16,7 @@ triggers {
         steps {
             sh 'echo "Testing the code"'
             sh '''
+                go vet
                 go test -v -cover
             '''
         }
