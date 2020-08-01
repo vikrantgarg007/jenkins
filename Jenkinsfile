@@ -13,6 +13,16 @@ triggers {
             '''
         }
     }
+stages {
+    stage('Sonar analysis') {
+        steps {
+            sh 'echo "Hello World"'
+            sh '''
+                echo "Testing"
+                ls -lah
+            '''
+        }
+    }
         stage('Build') {
             steps {
                 sh 'echo "Hello World"'
