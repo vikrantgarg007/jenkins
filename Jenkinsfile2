@@ -14,8 +14,6 @@ triggers {
         steps {
             sh 'echo "Hello World"'
             sh '''
-		go mod init
-                go vet
                 go test -v -cover
             '''
         }
