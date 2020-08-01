@@ -25,7 +25,7 @@ triggers {
             steps {
                 sh 'echo "Building the code"'
                 sh '''
-                    go build
+                    go build main.go
                     ls -lah
                 '''
             }
