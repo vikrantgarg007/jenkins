@@ -13,7 +13,6 @@ triggers {
             '''
         }
     }
-stages {
     stage('Sonar analysis') {
         steps {
             sh 'echo "Hello World"'
