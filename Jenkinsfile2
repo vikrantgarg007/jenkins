@@ -9,6 +9,7 @@ pipeline {
 triggers {
         pollSCM('* * * * *')
     }
+    agent { docker { image 'golang' } }
     stages {
     stage('Test') {
         steps {
