@@ -4,7 +4,7 @@ triggers {
         pollSCM('* * * * *')
     }
     stages {
-    stage('Test1') {
+    stage('Demo') {
         steps {
             sh 'echo "Hello World"'
             sh '''
